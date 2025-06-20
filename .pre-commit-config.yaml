@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: makefile-check
+        name: Run Makefile checks
+        entry: make
+        language: system
+        files: ^Makefile$
