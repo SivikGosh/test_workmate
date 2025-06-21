@@ -94,3 +94,103 @@ def filtered_max_rating_row():
         brandprice='999',
         rating='4.9'
     )]
+
+
+@pytest.fixture
+def asc_name_rows():
+    rows = [
+        Row(
+            name='galaxy s23 ultra',
+            brand='samsung',
+            brandprice='1199',
+            rating='4.8'
+        ),
+        Row(
+            name='iphone 15 pro',
+            brand='apple',
+            brandprice='999',
+            rating='4.9'
+        ),
+        Row(
+            name='redmi 10c',
+            brand='xiaomi',
+            brandprice='149',
+            rating='4.1'
+        ),
+    ]
+    return rows
+
+
+@pytest.fixture
+def desc_name_rows():
+    rows = [
+        Row(
+            name='redmi 10c',
+            brand='xiaomi',
+            brandprice='149',
+            rating='4.1'
+        ),
+        Row(
+            name='iphone 15 pro',
+            brand='apple',
+            brandprice='999',
+            rating='4.9'
+        ),
+        Row(
+            name='galaxy s23 ultra',
+            brand='samsung',
+            brandprice='1199',
+            rating='4.8'
+        ),
+    ]
+    return rows
+
+
+@pytest.fixture
+def asc_brand_rows():
+    rows = [
+        Row(
+            name='iphone 15 pro',
+            brand='apple',
+            brandprice='999',
+            rating='4.9'
+        ),
+        Row(
+            name='galaxy s23 ultra',
+            brand='samsung',
+            brandprice='1199',
+            rating='4.8'
+        ),
+        Row(
+            name='redmi 10c',
+            brand='xiaomi',
+            brandprice='149',
+            rating='4.1'
+        ),
+    ]
+    return rows
+
+
+@pytest.fixture
+def desc_brand_rows():
+    rows = [
+        Row(
+            name='redmi 10c',
+            brand='xiaomi',
+            brandprice='149',
+            rating='4.1'
+        ),
+        Row(
+            name='galaxy s23 ultra',
+            brand='samsung',
+            brandprice='1199',
+            rating='4.8'
+        ),
+        Row(
+            name='iphone 15 pro',
+            brand='apple',
+            brandprice='999',
+            rating='4.9'
+        ),
+    ]
+    return rows

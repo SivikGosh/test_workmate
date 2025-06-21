@@ -57,9 +57,31 @@ $ source venv/bin/activate
 ![Рейтинг минимальный](screenshots/rating_min.jpg)
 ![Рейтинг максимальный](screenshots/rating_max.jpg)
 
+### Аргумент '--order-by'
+
+| поле       | доступные операции |
+|-----------:|:------------------:|
+| name       | asc, desc          |
+| brand      | asc, desc          |
+| brandprice | asc, desc          |
+| rating     | asc, desc          |
+
+#### Примеры:
+![Название по возрастанию](screenshots/name_asc.jpg)
+![Название по убыванию](screenshots/name_desc.jpg)
+![Брэнд по возрастанию](screenshots/brand_asc.jpg)
+![Брэнд по убыванию](screenshots/brand_desc.jpg)
+![Цена по возрастанию](screenshots/price_asc.jpg)
+![Цена по убыванию](screenshots/price_desc.jpg)
+![Рейтинг по возрастанию](screenshots/rating_asc.jpg)
+![Рейтинг по убыванию](screenshots/rating_desc.jpg)
+
+
 ### Комбинирование аргументов
-#### --where и --aggregate можно совмещать:
+#### --where и --aggregate:
 ![Фильтрация и аггрегация](screenshots/where_and_aggregate.jpg)
+#### --where и --order-by:
+![Фильтрация и аггрегация](screenshots/where_and_order.jpg)
 
 ## Тестирование
 
